@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Joel Overton <npm@joeloverton.com> (http://joeloverton.com)",
   "repository": {
     "type": "git",
     "url": "http://github.com/joeloverton/node-joel.git"

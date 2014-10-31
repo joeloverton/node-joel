@@ -1,0 +1,22 @@
+{
+  "name": "joe",
+  "version": "0.0.0",
+  "description": "JSON object editor",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+  	"consolidate": "0.10.0",
+	"express-winston": "0.2.8",
+	"express": "~3",
+	"lodash": "2.4.1",
+	"handlebars": "2.0.0",
+	"node-express-shorthand": "0.0.0",
+	"q": "1.0.1",
+	"q-combinators": "0.4.2",
+	"winston": "0.8.1"
+  }
+}

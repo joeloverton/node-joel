@@ -1,10 +1,10 @@
-var errorPages 	= require('./src/qes/error');
-var path 		= require('path');
-var http 		= require('http');
-var logger  	= require('./src/logger');	
+var errorPages  = require('./src/qes/error');
+var path        = require('path');
+var http        = require('http');
+var logger      = require('./src/logger');  
 
 // Create the express app
-var app 	= require('./src/app');
+var app     = require('./src/app');
 
 // Access logging
 app.use(logger.access);
@@ -17,6 +17,6 @@ app.use(logger.error);
 
 // Error pages
 app.use(errorPages({
-	debug: true,
-	debugParam: 'wtf'
+    debug: true,
+    debugParam: 'wtf'
 }));

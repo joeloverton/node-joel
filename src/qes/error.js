@@ -4,17 +4,17 @@ var respondTo = require('./respond-to');
 Q.longStackSupport = true;
 
 module.exports = function (opts) {
-	var options = opts || {};
-	var debug = options.debug;
-	var debugParam = options.debugParam || 'debug';
-	var errorDir = opts.errorDir || 'errors';
-	var rethrow = opts.rethrowErrors;
+    var options = opts || {};
+    var debug = options.debug;
+    var debugParam = options.debugParam || 'debug';
+    var errorDir = opts.errorDir || 'errors';
+    var rethrow = opts.rethrowErrors;
 
-	return function (err, req, res, next) {
-		var respond = respondTo(req);
-		debug && typeof req.query[debugParam] !== 'undefined'
-			? respond.withError(err)
-			: respond.withErrorPageFrom(errorDir, err);
-		rethrow && next(err);
-	}
+    return function (err, req, res, next) {
+        var respond = respondTo(req);
+        debug && typeof req.query[debugParam] !== 'undefined'
+            ? respond.withError(err)
+            : respond.withErrorPageFrom(errorDir, err);
+        rethrow && next(err);
+    }
 };

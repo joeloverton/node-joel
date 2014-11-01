@@ -1,5 +1,5 @@
 module.exports = function (hbs) {
-	hbs.registerHelper('stringify', function (value) {
-		return JSON.stringify(value);
-	});
+    hbs.registerHelper('stringify', function (value) {
+        return JSON.stringify(value);
+    });
 }

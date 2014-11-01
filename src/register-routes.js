@@ -1,5 +1,5 @@
 var Q = require('q');
-var respire = require('./respire');
+var respire = require('respire');
 
 module.exports = function (app) {
     app.use(respire);
@@ -25,6 +25,7 @@ function renderSomeData(req, res, next) {
         four: '5',
         five: '8'
     })
+        .then(res.renderInto(JSON.stringify))
         .then(res.respond.withJSON)
         .catch(next).done();
 }

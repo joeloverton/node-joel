@@ -1,7 +1,7 @@
 var path        = require('path');
 var http        = require('http');
 var logger      = require('./src/logger');  
-var respire		= require('./src/respire');
+var respire		= require('respire');
 
 // Create the express app
 var app     = require('./src/app');

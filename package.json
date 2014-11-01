@@ -13,13 +13,14 @@
   },
   "license": "MIT",
   "dependencies": {
-  	"consolidate": "0.10.0",
-  	"express-winston": "0.2.8",
-  	"express": "~4",
-  	"lodash": "2.4.1",
-  	"handlebars": "2.0.0",
-  	"q": "1.0.1",
-  	"q-combinators": "0.4.2",
-  	"winston": "0.8.1"
+    "consolidate": "0.10.0",
+    "express-winston": "0.2.8",
+    "express": "~4",
+    "lodash": "2.4.1",
+    "handlebars": "2.0.0",
+    "q": "1.0.1",
+    "q-combinators": "0.4.2",
+    "winston": "0.8.1",
+    "respire": "0.0.0"
   }
 }

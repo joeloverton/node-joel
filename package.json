@@ -1,6 +1,6 @@
 {
   "name": "joel",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "json object editor lite",
   "main": "index.js",
   "scripts": {

@@ -1,6 +1,6 @@
 {
   "name": "joel",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "json object editor lite",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,7 @@
     "type": "git",
     "url": "http://github.com/joeloverton/node-joel.git"
   },
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
   	"consolidate": "0.10.0",
   	"express-winston": "0.2.8",

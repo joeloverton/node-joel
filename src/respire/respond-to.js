@@ -15,7 +15,7 @@ function respondTo (reqOrRes) {
 
         withJSON: function withJSON (data) {
             res.setHeader('Content-Type', 'application/json');
-            res.send(JSON.stringify(data));
+            res.send(typeof data === 'string' ? data : JSON.stringify(data));
             return res;
         },
 

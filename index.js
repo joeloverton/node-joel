@@ -1,7 +1,7 @@
-var errorPages  = require('./src/qes/error');
 var path        = require('path');
 var http        = require('http');
 var logger      = require('./src/logger');  
+var respire		= require('./src/respire');
 
 // Create the express app
 var app     = require('./src/app');
@@ -16,7 +16,7 @@ require('./src/register-routes')(app);
 app.use(logger.error);
 
 // Error pages
-app.use(errorPages({
+app.use(respire.middleware.errorPages({
     debug: true,
     debugParam: 'wtf'
 }));

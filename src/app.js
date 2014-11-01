@@ -2,7 +2,10 @@ var express 	= require('express');
 var engines		= require('consolidate');
 var path		= require('path');
 var http		= require('http');
+var helpers		= require('./hbs-helpers');
 
+helpers(require('handlebars'));
+	
 var app = express();
 app.engine('hbs', engines.handlebars);
 app.set('view engine', 'hbs');

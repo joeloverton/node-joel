@@ -1,6 +1,6 @@
 {
   "name": "joel",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "json object editor lite",
   "main": "index.js",
   "scripts": {
@@ -15,10 +15,9 @@
   "dependencies": {
   	"consolidate": "0.10.0",
   	"express-winston": "0.2.8",
-  	"express": "~3",
+  	"express": "~4",
   	"lodash": "2.4.1",
   	"handlebars": "2.0.0",
-  	"node-express-shorthand": "0.0.0",
   	"q": "1.0.1",
   	"q-combinators": "0.4.2",
   	"winston": "0.8.1"
